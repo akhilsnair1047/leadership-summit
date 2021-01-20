@@ -1668,6 +1668,20 @@ h1 {
 .team-item .overlay-social-icon .social-icons li .lni-pinterest:hover {
   background: #bd081c;
 }
+.team-item .overlay-social-icon .social-icons li .lni-instagram {
+  background: #ee0d98;
+}
+
+.team-item .overlay-social-icon .social-icons li .lni-instagram:hover {
+  background: #ff15a5;
+}
+.team-item .overlay-social-icon .social-icons li .lni-linkedin-original {
+  background: rgba(8, 117, 189, 0.7);
+}
+
+.team-item .overlay-social-icon .social-icons li .lni-linkedin-original:hover {
+  background: #3175c2;
+}
 
 .team-item .info-text {
   padding: 20px 0px 5px;
