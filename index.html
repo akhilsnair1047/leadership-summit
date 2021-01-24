@@ -49,7 +49,9 @@
         .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
 
-
+        #more_2 {display: none;}
+        #more {display: none;}
+        #more_3 {display: none;}
 
     </style>
 </head>
@@ -1757,8 +1759,17 @@
                                         Learn Something New
                                     </a>
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut
-                                    labore et dolore</p>
+                                <p>Leaders are not born, rather they are prepared. And the most important skills in today’s scenario are
+                                    leadership and management. In fact, these cannot be taught unless experienced and practiced. One
+                                    is just introduced to the concept. And then one can learn it by oneself. You just need to have an
+                                    inspiration. Because it is force that pushes you from inside and inculcates in you the zeal to work on
+                                    yourself.<span id="dots">...</span><span id="more">
+                                        Being a great leader and manager is one of the most important skill to be developed in oneself, so as
+                                        to cop up with the ups and down of the life. The Leadership and Management are two different
+                                        things to be acquired. Whatever may be the state-space, you will have to do your part and yes, the
+                                        truth is everything happens for a reason. Though the happening may be good or bad, but the
+                                        outcome to come will always be good. Just be focused on your path. But remember to do your part</span></p>
+                                    <button onclick="myFunction_1()" id="myBtn" class="btn btn-common">Read more</button>
                             </div>
                             <div class="meta-tags">
                                 <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span>
@@ -1781,8 +1792,11 @@
                                         Call for sponsors
                                     </a>
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut
-                                    labore et dolore</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae quasi alias non molestias, possimus, commodi asperiores exercitationem eveniet dolor ipsa dignissimos. Saepe harum odit in qui. Officia, at sit.</p>
+                                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut<span id="dots_2">...</span><span id="more_2">
+                                        labore et dolore</span></p>
+                                        <button onclick="myFunction_2()" id="myBtn_2" class="btn btn-common">Read more</button> -->
+                                      <a href=""></a>  <button  class="btn btn-common">Read more</button>     
                             </div>
                             <div class="meta-tags">
                                 <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span>
@@ -1805,8 +1819,9 @@
                                         Elon Musk joining the event
                                     </a>
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut
-                                    labore et dolore</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipsing elit, sed do eiusmodincididunt ut<span id="dots_3">...</span><span id="more_3">
+                                    labore et dolore</span></p>
+                                    <button onclick="myFunction_3()" id="myBtn_3" class="btn btn-common">Read more</button>
                             </div>
                             <div class="meta-tags">
                                 <span class="date"><i class="lni-calendar"></i> Jan 20, 2020</span>
@@ -1814,9 +1829,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
+                    <!-- <div class="col-12 text-center">
                         <a href="#" class="btn btn-common">View all Blog</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -2029,6 +2044,54 @@
         <script src="js/js-main.js"></script>
         <script src="js/js-form-validator.min.js"></script>
         <script src="js/js-contact-form-script.min.js"></script>
+
+        <script>
+            function myFunction_1() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }  
+            function myFunction_2() {
+              var dots = document.getElementById("dots_2");
+              var moreText = document.getElementById("more_2");
+              var btnText = document.getElementById("myBtn_2");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            function myFunction_3() {
+              var dots = document.getElementById("dots_3");
+              var moreText = document.getElementById("more_3");
+              var btnText = document.getElementById("myBtn_3");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            </script>
 </body>
 
 </html>
