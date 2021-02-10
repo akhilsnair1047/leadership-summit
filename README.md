@@ -1,4 +1,4 @@
-# Leadership-Summit
+# Leadership-Summit (Sarathi)
 website for Spade Leadership Summit.
 
 ## collaborators -
