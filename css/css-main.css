@@ -2432,6 +2432,11 @@ footer {
   background-size: cover;
 }
 
+.hero-area-bg-quiz {
+  background: url(../images/quiz.png) no-repeat;
+  background-size: cover;
+}
+
 #hero-area {
   color: #fff;
   overflow: hidden;

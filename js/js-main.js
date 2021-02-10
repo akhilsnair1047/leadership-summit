@@ -1,4 +1,4 @@
-(function($){"use strict";$(window).on('load',function(){$('#preloader').fadeOut();$(window).on('scroll',function(){if($(window).scrollTop()>200){$('.scrolling-navbar').addClass('top-nav-collapse');}else{$('.scrolling-navbar').removeClass('top-nav-collapse');}});jQuery('#clock').countdown('2021/2/10',function(event){var $this=jQuery(this).html(event.strftime(''
+(function($){"use strict";$(window).on('load',function(){$('#preloader').fadeOut();$(window).on('scroll',function(){if($(window).scrollTop()>200){$('.scrolling-navbar').addClass('top-nav-collapse');}else{$('.scrolling-navbar').removeClass('top-nav-collapse');}});jQuery('#clock').countdown('2021/2/15',function(event){var $this=jQuery(this).html(event.strftime(''
 +'<div class="time-entry days"><span>%-D</span> <b>:</b> Days</div> '
 +'<div class="time-entry hours"><span>%H</span> <b>:</b> Hours</div> '
 +'<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutes</div> '
