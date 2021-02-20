@@ -1726,6 +1726,13 @@ h1 {
 .team-item .overlay-social-icon .social-icons li .lni-linkedin-original:hover {
   background: #3175c2;
 }
+.team-item .overlay-social-icon .social-icons li .lni-github-original {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.team-item .overlay-social-icon .social-icons li .lni-github-original:hover {
+  background: #181818;
+}
 
 .team-item .info-text {
   padding: 20px 0px 5px;
