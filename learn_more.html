@@ -11,12 +11,101 @@
     <link rel="stylesheet" type="text/css" href="css/css-animate.css">
     <link rel="stylesheet" type="text/css" href="css/css-main.css">
     <link rel="stylesheet" type="text/css" href="css/css-responsive.css">
-<link rel="shortcut icon" href="images/logo_new.png" type="image/png">
-   
+    <link rel="shortcut icon" href="images/logo_new.png" type="image/png">
+    <style>
+        /* body {font-family: Arial, Helvetica, sans-serif;} */
+        
+        #myImg {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        #myImg:hover {opacity: 0.7;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 90%;
+          max-width: 850px;
+        }
+        
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+        
+        /* Add Animation */
+        .modal-content, #caption {  
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+          from {-webkit-transform:scale(0)} 
+          to {-webkit-transform:scale(1)}
+        }
+        
+        @keyframes zoom {
+          from {transform:scale(0)} 
+          to {transform:scale(1)}
+        }
+        
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 75px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 20px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+          .modal-content {
+            width: 100%;
+          }
+        }
+        </style>
+
 </head>
 
 <body>
-       
+
 
     <header id="header-wrap">
         <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
@@ -80,7 +169,7 @@
                 </div>
             </div>
         </nav>
-        <div id="hero-area" class="hero-area-bg-2">
+        <div id="hero-area" class="hero-area-bg-3">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -90,7 +179,7 @@
                                 <i class="lni lni-blogger"></i>
                             </div>
                             <!-- <p class="banner-info">15, Feb 2021 - Youtube</p> -->
-                            
+
                             <h2 class="head-title">Learn more</h2>
                             <!-- <p class="banner-desc">
                                 Leadership summit is a platform that can be the initiating step you look for when it comes to living up for your goals. </p> -->
@@ -106,16 +195,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-xs-12">
-                        <div class="img-thumb">
-                            <img class="img-fluid" src="images/about-img1.png" alt="">
+                        <div class="img-thumb" style="margin-top: 70px;">
+                            <img class="img-fluid" src="images/LS Brocher.jpg" id="myImg" alt="">
+                            <div id="myModal" class="modal">
+                                <span class="close">CLOSE</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                              </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-xs-12">
                         <div class="about-content">
                             <div>
                                 <div class="about-text">
-                                    <h2>Leadership Summit
-                                    </h2>
+                                    <!-- <h2>Leadership Summit
+                                    </h2> -->
+                                    <div class="section-title-header text-center">
+                                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Leadership summit</h2>
+                                        
+                                    </div>
                                     <p>Leadership summit is an initiative that
                                         basically provides a platform for young adults
                                         to learn and incorporate new skills through
@@ -134,137 +232,176 @@
                                         atmosphere.<br>The platform will help you with the opportunity
                                         of having discussion, teaching and learning.
                                         You’ll be given opportunities to clear all your
-                                        queries regarding the topic of interest.<br>The summit will have a special guest lecture on
+                                        queries regarding the topic of interest.<br>The summit will have a special guest
+                                        lecture on
                                         various topics by the experts on the same
                                         with audience to interact directly. We’ve
                                         collaborated with various professionals for
                                         the same and are looking forward to serve
                                         you with all your requirements.
-                                    
-                                       
-                                         </p>
-                                        
+
+
+                                    </p>
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="row">
-                                <h3>Salient features of the Leadership summit
-                                </h3>
-                                <p>
-                                    <b>• Exposure to new start-ups: </b>As you’ll
-                                    interact with various business professionals and
-                                    hence, you’ll get to know about their
-                                    businesses too.<br>
-                                    
-                                    <b>• Social media Engagement: </b> As you’ll learn
-                                    about the professionals and their webinars in
-                                    your respective topic of interests, there will be
-                                    more productive engagement in social media.<br>
-                                    <b>• Expanding corporate connections: </b> Every
-                                    interaction is an opportunity in disguise to take
-                                    you forward by some or the other means and
-                                    it’s always good to have a healthy connection.<br>
-                                    <b> • Interesting and meaningful discussion: </b>The
-                                    webinar you enroll in is going to offer you with
-                                    in- depth knowledge, interesting discussions
-                                    too to make sure you sign out with a clearer
-                                    picture.
-<br>                                    
-                                    <b> • Presentation of your work/business: </b> For
-                                    the professionals who are going to deliver their
-                                    efforts and time for the sessions that they will
-                                    conduct will get the opportunity to showcase
-                                    their business/ products, which can be the
-                                    promotional event for them and can be
-                                    profitable to them in a way.
-<br>                                    
-                                    <b> • Need of the hour: </b> When pursuing a career in
-                                    the field of your interest it’s always a plus point
-                                    to know all about it beforehand so that you can
-                                    analyze the upcoming challenges and can
-                                    gather yourself to face them like a boss.
-                                    LEADERSHIP SUMMIT ~“A platform made to
-                                    serve you.”<br><br>
-                                    
-                                </p> 
+                
+                   
+                
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-12">
+                            <div class="section-title-header text-center">
+                                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Salient features of the Leadership summit</h2>
                                 
-                                <h3>Who can join?</h3>
-                                <p>
-                                    <b>Everyone who have a zeal for knowledge.</b><br>Taking into account today’s youth and it’s demands,
-                                    following topics can be the accelerator to your vehicle of
-                                    knowledge:<br>
-                                    • Artificial Intelligence: a topic that is of utmost
-                                    importance for all, be itstudents, especially computer
-                                    science students, or a working person to incorporate
-                                    AI in their business/ start-ups.<br>
-                                    • It’s time for budget: given the havoc created by
-                                    COVID, this year’s budget is the most crucial one and
-                                    the one that requires some extra-carefuldecisions.<br>
-                                    • Crack interview like a pro: taking into consideration
-                                    the pandemic and the ups and downs in jobs forthe
-                                    youths.<br>
-                                    • What thought process flows in the mind of a
-                                    strategist?<br>
-                                    • Entrepreneurship is the new ship sailing in the ocean
-                                    of business for young entrepreneurs.<br>
-                                    • When it’s about promotion, social media platforms
-                                    are the kingsfor which digital marketing and Google
-                                    ads optimization will be helpful for all.<br>
-                                    • Our economy, the prime focus after COVID, is a
-topic that can fascinate economists around.<br>
-• Data science, the burgeoning topic for the computer
-lovers and also the need of the hour.<br>
-• Women in business and leadership role, not onlyit’s
-the need but also the pride for all of us.<br>
-• GST came and so came the e-invoicing, this can help
-the business holders to gain insights on it and get
-advanced.<br>
-• Co-operation is the key that holds employees at all
-levels firmly.<br>
-• Evolution of jobs with the evolution of generations, a
-topic that takes you in the past and makes it easier to
-fill the voids.<br>
-• Increase in the importance of Cyber security with the
-shift in online from offline in everything, be it business
-or usual chit-chatting.<br><br></p>
-<h3>Outcomes/ Takeaways from the event</h3>
-<p>
-                                
-                                
-                                <b>• In-depth knowledge about the topic:</b> as the sessions are going to involve the
-                                top-class speakers so, the attendees are going to gain ample amount of
-                                knowledge from it.
-                                 <br>
-                                <b>• Clarification of doubts/queries:</b> a special time slot in the session is dedicated
-                                forthe doubts and queries ofthe attendeesto getmore clarity regarding the
-                                topic.
-                                <br>
-                                <b>• Certificates of attending the event:</b>  participation of attendees will be
-                                acknowledged via distribution of certificates penned in their respective
-                                names from the authorities.
-                                . <br>
-                                <b>• Platform for their brand/product promotion for speakers:</b> speakers will get
-                                an opportunity to enhance their respective brand values through this
-                                platform.<br>
-                                
-                                <b>• Platform to share their knowledge/experiences for speakers:</b> speakers will be
-                                able to make some, if not all, difference in the lives of attendeesthrough
-                                sharingtheirknowledge or experiencesthatled thematthisheight. <br>
-                                
-                                </p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                    <p>
+                        <b>• Exposure to new start-ups: </b>As you’ll
+                        interact with various business professionals and
+                        hence, you’ll get to know about their
+                        businesses too.<br>
+
+                        <b>• Social media Engagement: </b> As you’ll learn
+                        about the professionals and their webinars in
+                        your respective topic of interests, there will be
+                        more productive engagement in social media.<br>
+                        <b>• Expanding corporate connections: </b> Every
+                        interaction is an opportunity in disguise to take
+                        you forward by some or the other means and
+                        it’s always good to have a healthy connection.<br>
+                        <b> • Interesting and meaningful discussion: </b>The
+                        webinar you enroll in is going to offer you with
+                        in- depth knowledge, interesting discussions
+                        too to make sure you sign out with a clearer
+                        picture.
+                        <br>
+                        <b> • Presentation of your work/business: </b> For
+                        the professionals who are going to deliver their
+                        efforts and time for the sessions that they will
+                        conduct will get the opportunity to showcase
+                        their business/ products, which can be the
+                        promotional event for them and can be
+                        profitable to them in a way.
+                        <br>
+                        <b> • Need of the hour: </b> When pursuing a career in
+                        the field of your interest it’s always a plus point
+                        to know all about it beforehand so that you can
+                        analyze the upcoming challenges and can
+                        gather yourself to face them like a boss.
+                        LEADERSHIP SUMMIT ~“A platform made to
+                        serve you.”<br><br>
+
+                    </p>
+                </div>
+            </div>
+
+                    <!-- <h3>Who can join?</h3> -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-12">
+                            <div class="section-title-header text-center">
+                                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Who can join?</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                    <p>
+                        <b>Everyone who have a zeal for knowledge.</b><br>Taking into account today’s youth and it’s
+                        demands,
+                        following topics can be the accelerator to your vehicle of
+                        knowledge:<br>
+                        • Artificial Intelligence: a topic that is of utmost
+                        importance for all, be itstudents, especially computer
+                        science students, or a working person to incorporate
+                        AI in their business/ start-ups.<br>
+                        • It’s time for budget: given the havoc created by
+                        COVID, this year’s budget is the most crucial one and
+                        the one that requires some extra-carefuldecisions.<br>
+                        • Crack interview like a pro: taking into consideration
+                        the pandemic and the ups and downs in jobs forthe
+                        youths.<br>
+                        • What thought process flows in the mind of a
+                        strategist?<br>
+                        • Entrepreneurship is the new ship sailing in the ocean
+                        of business for young entrepreneurs.<br>
+                        • When it’s about promotion, social media platforms
+                        are the kingsfor which digital marketing and Google
+                        ads optimization will be helpful for all.<br>
+                        • Our economy, the prime focus after COVID, is a
+                        topic that can fascinate economists around.<br>
+                        • Data science, the burgeoning topic for the computer
+                        lovers and also the need of the hour.<br>
+                        • Women in business and leadership role, not onlyit’s
+                        the need but also the pride for all of us.<br>
+                        • GST came and so came the e-invoicing, this can help
+                        the business holders to gain insights on it and get
+                        advanced.<br>
+                        • Co-operation is the key that holds employees at all
+                        levels firmly.<br>
+                        • Evolution of jobs with the evolution of generations, a
+                        topic that takes you in the past and makes it easier to
+                        fill the voids.<br>
+                        • Increase in the importance of Cyber security with the
+                        shift in online from offline in everything, be it business
+                        or usual chit-chatting.<br><br>
+                    </p>
+                </div>
+            </div>
+                    <!-- <h3>Outcomes/ Takeaways from the event</h3> -->
+                               <div class="row" style="margin-top: 50px;">
+                        <div class="col-12">
+                            <div class="section-title-header text-center">
+                                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Outcomes/ Takeaways from the event</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-12">
+                    <p>
+
+
+                        <b>• In-depth knowledge about the topic:</b> as the sessions are going to involve the
+                        top-class speakers so, the attendees are going to gain ample amount of
+                        knowledge from it.
+                        <br>
+                        <b>• Clarification of doubts/queries:</b> a special time slot in the session is dedicated
+                        forthe doubts and queries ofthe attendeesto getmore clarity regarding the
+                        topic.
+                        <br>
+                        <b>• Certificates of attending the event:</b> participation of attendees will be
+                        acknowledged via distribution of certificates penned in their respective
+                        names from the authorities.
+                        . <br>
+                        <b>• Platform for their brand/product promotion for speakers:</b> speakers will get
+                        an opportunity to enhance their respective brand values through this
+                        platform.<br>
+
+                        <b>• Platform to share their knowledge/experiences for speakers:</b> speakers will be
+                        able to make some, if not all, difference in the lives of attendeesthrough
+                        sharingtheirknowledge or experiencesthatled thematthisheight. <br>
+
+                    </p>
+                </div>
+            </div>
+                </div>
             </div>
         </section>
-        
-        
-       
-       
-                
-        
-        <section id="contact-map" class="section-padding">
+
+
+
+
+
+
+        <!-- <section id="contact-map" class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -324,15 +461,15 @@ or usual chit-chatting.<br><br></p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="google-map-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <object style="border:0; height: 450px; width: 100%;"
                             data="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13638.993918259603!2d75.6521891!3d31.2830518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60d14f9b615e2b87!2sSpade%20EMS!5e0!3m2!1sen!2sin!4v1605030777451!5m2!1sen!2sin"></object>
-                           
-                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -361,8 +498,8 @@ or usual chit-chatting.<br><br></p>
                                 <i class="lni-envelope"></i>
                             </li>
                             <li><span>
-                                            info@spadeems.com 
-                                        </span>
+                                    info@spadeems.com
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -393,19 +530,21 @@ or usual chit-chatting.<br><br></p>
                                             class="lni-facebook-filled"></i></a></li>
                                 <li class="twitter"><a target="_blank" href="3.html"><i
                                             class="lni-twitter-filled"></i></a></li>
-                                <li class="facebook" ><a target="_blank" href="3.html"><i class="lni-instagram"></i></a>
+                                <li class="facebook"><a target="_blank" href="3.html"><i class="lni-instagram"></i></a>
                                 </li>
                                 <li class="twitter"><a target="_blank" href="3.html"><i class="lni-youtube"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <div class="site-info">
-                            <p><span>&#169;</span>All Rights Reserved to  <a href="http://spadeems.com" rel="nofollow">SPADEEMS</a></p>
+                            <p><span>&#169;</span>All Rights Reserved to <a href="http://spadeems.com"
+                                    rel="nofollow">SPADEEMS</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer><!-- <a href="#" class="back-to-top"> 
+        </footer>
+        <!-- <a href="#" class="back-to-top"> 
             <i class="lni-chevron-up"></i>
         </a> -->
         <div id="preloader">
@@ -440,5 +579,32 @@ or usual chit-chatting.<br><br></p>
         <script src="js/js-main.js"></script>
         <script src="js/js-form-validator.min.js"></script>
         <script src="js/js-contact-form-script.min.js"></script>
-<div class="cui-embed" data-cui-uid="JJflrCZT" data-cui-mode="pill" data-cui-pill-button-color="#00B7EB"></div> <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
+        <div class="cui-embed" data-cui-uid="JJflrCZT" data-cui-mode="pill" data-cui-pill-button-color="#00B7EB"></div>
+        <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+            
+    </body>
+    
+
 </html>
