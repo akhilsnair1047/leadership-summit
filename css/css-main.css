@@ -1697,11 +1697,11 @@ h1 {
   background: #1da1f2;
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-google-plus {
+.team-item .overlay-social-icon .social-icons li .lni-youtube {
   background: rgba(234, 67, 53, 0.7);
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-google-plus:hover {
+.team-item .overlay-social-icon .social-icons li .lni-youtube:hover {
   background: #ea4335;
 }
 
@@ -2436,6 +2436,10 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   background: url(../images/main.jpg) no-repeat;
+  background-size: cover;
+}
+.hero-area-bg-3 {
+  background: url(../images/LS\ Brocher.jpg) no-repeat;
   background-size: cover;
 }
 
