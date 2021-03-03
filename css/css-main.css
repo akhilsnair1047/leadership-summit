@@ -2438,6 +2438,10 @@ footer {
   background: url(../images/main.jpg) no-repeat;
   background-size: cover;
 }
+.hero-area-bg-2 {
+  background: url(../images/vector/10_1.png) no-repeat;
+  background-size: cover;
+}
 .hero-area-bg-3 {
   background: url(../images/LS\ Brocher.jpg) no-repeat;
   background-size: cover;
